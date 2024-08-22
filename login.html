@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+    <form  id="loginForm">
+        <h1>login your account</h1>
+        <label for="Email">Email</label>
+        <input type="email" id="Email" name="Email" required autocomplete="email"><br><br>
+       <label for="password">Password</label>
+       <input type="password" id="password" name="password" required autocomplete="new-password"><br><br>
+       <button type="button" id="submit" onclick="validateAndRegister()" >login</button><br><br>
+       Don't have an account<a href="index.html">Register</a>
+    </form>
+    </div>
+
+
+    <script>
+        function validateAndRegister() {
+          const form = document.getElementById('loginForm');
+          if (form.checkValidity()) {
+            // Registration logic yahan add karain
+            alert("Login successful!");
+              window.location.href= "index1.html";
+          } else {
+            alert("Please fill out all required fields.");
+          }
+        }
+      </script>
+</body>
+</html>

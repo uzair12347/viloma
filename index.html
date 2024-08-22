@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="container">
+    <form  id="registerForm">
+        <h1>Create New Account</h1>
+        <label for="User Name">UserName</label>
+        <input type="text" id="user" name="UserName" required><br><br>
+        <label for="First name">FirstName</label>
+        <input type="text" id="FirstName" name="FirstName" required><br><br>
+        <label for="LastName">LastName</label>
+         <input type="text" id="LastName" name="LastName" required><br><br>
+         <label for="Email">Email</label>
+         <input type="email" id="Email" name="Email" required><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="checkbox"  required>By accepting terms and condition<br><br>
+        <button type="button" id="submit"  onclick="register()">Register</button><br><br>
+        Already have an account<a href="login.html">login</a>
+    </div>
+        </form>
+        <div id="loadingSpinner" style="display: none;"></div>
+
+
+        <script>
+            function register (){
+                const form = document.getElementById('registerForm');
+          if (form.checkValidity()) {
+            // Registration logic yahan add karain
+            alert("Registration successful!");
+              window.location.href= "index1.html";
+          } else {
+            alert("Please fill out all required fields.");
+          }
+        }
+      </script>
+        </script>
+    
+</body>
+</html>

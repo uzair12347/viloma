@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h2>EARN MORE MONEY IS A WEBSITE WHERE YOU CAN EARN<br> MONEY BY SMALL INVESTMENT AND BIG PROFIT.</h2>
+    <h2> EARN MORE MONEY INVESTMENT PLAN:- <br><br> PLAN O1:- <br> investment: 250 Rs <br>Daily profit : 20 Rs<br>paln validity:20 Days <br> Total profit: 400 <br> Referral commision:25 Rs<br><br>PLAN 02:- <br> investment:500 Rs <br> Daily profit:32 Rs <br> plan validity:20 Days <br> Total profit:640 <br> Referral commision:50 Rs <br><br> PLAN 03:-  <br> investment:750 Rs <br> Daily profit:45 Rs <br> plan validity:20 Days <br>Total profit:900 <br> Rederral commision:150 Rs<br><br>PLAN 04:-<br> investment:1000 Rs <br> Daily profit:57 Rs <br> plan validity:20 Days <br>Total profit:1150 <br> Referral commision:200 Rs</h2>
+
+    <div class="container">
+        <h2> choose plan and Send payment on this number : <br>
+          <br>Easy Paisa:-<br> ACCOUNT Number:03333937236<br>Account TiTle: Gulam Rasool</h2>
+          <h2>NOTE:- PAYMENT KARANE KE BAAD DIYE GAYE EMAIL PR APNA PLAN NUMBER OR PAYMENT RECEIPT SEND KARDE AUR APNE ACCOUNT KI DETAILS  SEND KARDE TAAKE WITHDRAW DIYA JA SAKE SHUKRIYA.</h2>
+         <h2> Need Help?<img src="download.png" width="50" onclick="location.href='mailto:earnmore674@gmail.com'"></h2>
+
+        </div>
+
+          <form id="form"><br>
+            <h3>Enter Transcation Screenshot:</h3>
+            <input type="file" id="fileInput"  required><br>
+                <button type="submit" id="submit"  onclick="transaction()">Submit</button>
+          </form>
+
+
+          <script>
+            function transaction (){
+            const form = document.getElementById('form');
+          if (form.checkValidity()) {
+            // Registration logic yahan add karain
+            alert("Thank you for uploading your payment screenshot.");
+              window.location.href= "more.html";
+          } else {
+            alert("Please paste payment screenshot.");
+          }
+        }
+          </script>
+
+    
+
+</body>
+</html>
